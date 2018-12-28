@@ -4,8 +4,10 @@ const exphbs =require ('express-handlebars')
 const nodemailer = require('nodemailer')
 const path =require('path')
 const app = express()
+require('dotenv').config();
 
 var port = process.env.PORT || 8080;
+var password = process.env.GMAIL_PASSWORD
 //view engine set up
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
@@ -38,7 +40,7 @@ app.post('/send', (req, res) =>{
         secure: false, // true for 465, false for other ports
         auth: {
             user: "noreply072493@gmail.com", // generated ethereal user
-            pass: "Bimbo2017!"// generated ethereal password
+            pass: password// generated ethereal password your password
         },
         tls:{
             rejectUnauthorized:false
