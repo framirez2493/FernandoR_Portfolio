@@ -1,0 +1,38 @@
+{
+    "title": "Freelancer",
+    "name": "startbootstrap-freelancer",
+    "version": "5.0.0",
+    "description": "A freelancer portfolio HTML theme for Bootstrap.",
+    "keywords": [
+        "css",
+        "sass",
+        "html",
+        "responsive",
+        "theme",
+        "template"
+    ],
+    "homepage": "https://github.com/framirez2493",
+    "bugs": {
+        "url": "https://github.com/framirez2493",
+        "email": "ccc@dd.com"
+    },
+    "license": "MIT",
+    "author": "FR",
+    "contributors": [
+        "FR"
+    ],
+    "repository": {
+        "type": "none",
+        "url": "https://github.com/framirez2493"
+    },
+    "main": "server.js",
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "express": "^4.16.4",
+        "express-handlebars": "^3.0.0",
+        "nodemailer": "^4.7.0"
+    },
+    "scripts": {
+        "start": "node server.js"
+    }
+}
